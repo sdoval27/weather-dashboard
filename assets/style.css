@@ -1,0 +1,14 @@
+:root {
+--fontColor: white;
+--backgroundColor:#ECD744 ;
+}
+
+header {
+    background-color: var(--backgroundColor);
+    padding: 15px;
+}
+
+.title {
+    color: var(--fontColor);
+    text-align: center;
+}
