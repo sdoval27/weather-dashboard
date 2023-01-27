@@ -2,7 +2,7 @@
 --fontColor: white;
 --backgroundColor:#ECD744 ;
 }
-
+/*header elements*/
 header {
     background-color: var(--backgroundColor);
     padding: 15px;
@@ -11,4 +11,18 @@ header {
 .title {
     color: var(--fontColor);
     text-align: center;
+}
+
+/*sidebar elements*/
+.searchweather {
+    margin-top: 5px;
+    border-color: #E5E5E5;
+    border-radius: 5px;
+    text-align: center;
+}
+.searchbtn {
+    border:none;
+    border-radius: 5px;
+    background-color: var(--backgroundColor);
+    padding: 5px;
 }
