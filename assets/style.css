@@ -19,11 +19,16 @@ header {
 }
 
 /*sidebar elements*/
+.sidebar{
+    max-width: 300px;
+    height: fit-content;
+}
 .searchweather {
     margin-top: 5px;
     border-color: #E5E5E5;
     border-radius: 5px;
     text-align: center;
+    
 }
 
 input.searchweather{
@@ -36,4 +41,15 @@ input.searchweather{
     background-color: var(--backgroundColor);
     padding: 5px;
     color:white;
+}
+
+.widgets-container {
+    height:240px;
+    width:100%;
+   margin: 0 auto;
+}
+.icons{
+  width: 100px;
+  float: right;
+  padding:5px;
 }
