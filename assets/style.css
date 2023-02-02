@@ -52,11 +52,12 @@ input.searchweather{
 
 .widgets-container {
     height:240px;
-    width:100%;
+    width:80%;
     margin: 0 auto;
     text-align: center;
     color: var(--regText);
 }
+
 .icons{
   width: 100px;
   float: right;
