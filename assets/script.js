@@ -35,10 +35,7 @@ $(function () {
     //pushes city name value into array
     searchHistory.push(cityName);
     console.log(searchHistory);
-    //saves array as a string
-    localStorage.setItem('cityKey', JSON.stringify(searchHistory));
 
-    console.log(cityName);
     var savedCities = $('#saved-cities');
     // TODO: APPEND ARRAY by ID "#saved-cities"
     for (i = 0; i < searchHistory.length; i++) {
@@ -56,10 +53,44 @@ $(function () {
       console.log(savedCities);
     }
 
+    //saves array as a string
+    localStorage.setItem('cityKey', JSON.stringify(searchHistory));
+
+    console.log(cityName);
+   
   }
 
+  var fiveDayEl = $('.icons-container');
+  var cardDays = $(".icons");
+  var cityNameEl = $('<h2>');
+  
   function renderFiveDay(weather){
     console.log(weather);
+    
+    //create for loop of weather list;
+    //weather:calls api data List: calls the list array w weather info
+    //and skips by weather info per day (this is the +8)
+    for(i=0; i < weather.list.length; i = i + 8){
+      console.log(weather.list[i]);
+      var tempEl = document.querySelector('#temp-'+i);
+
+      var humEl = document.querySelector('#hum-'+i);
+      var windEl =document.querySelector('#speed-'+i); //call by id and i
+      //put 5day forecast into div class: icons
+      tempEl.textContent= "Temp: " + weather.list[i].main.temp + "°F";
+      console.log(tempEl);
+      humEl.textContent= "Humidity: " + weather.list[i].main.humidity;
+      windEl.textContent= "Winds: " + weather.list[i].wind.speed + "mph";
+      
+     //fiveDayEl.text(cardDays);
+     tempEl.innerText;
+     humEl.innerText;
+     windEl.innerText;
+     //cardDays.text(humEl);
+     //cardDays.text(windEl);
+    }
+      
+    
   }
   //assign local storage to searched cities
   $('#searchbtn').on('click', searchCity);

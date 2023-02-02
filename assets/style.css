@@ -21,6 +21,7 @@ header {
 .info {
     color: var(--regText);
     list-style-type: none;
+    padding: 5px;
 }
 
 /*sidebar elements*/
