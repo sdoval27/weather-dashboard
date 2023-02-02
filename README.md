@@ -1,6 +1,6 @@
 # weather-dashboard
 
-site link: 
+site link: https://sdoval27.github.io/weather-dashboard/
 Repo link: https://github.com/sdoval27/weather-dashboard
 
 ## Description
