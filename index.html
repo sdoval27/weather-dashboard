@@ -9,19 +9,84 @@
 </head>
 <body>
     <header>
-    <h1 class="title">This is a title</h1>
+    <h1 class="title">The Meteorologist</h1>
+    <p id="date" class="title"></p>
     </header>
 
     <aside class="sidebar">
-        <textarea id="searchbar" class="searchweather">search</textarea>
+        <input type="text" id="searchbar" class="searchweather"></textarea>
         <button id="searchbtn" class="searchbtn">Search</button>
         <ul id="saved-cities">
 
         </ul>
     </aside>
 
-    <div class="container"></div>
+    <div id='cityinfo' class="container">
+        <h2 id="city-name"></h2>
+    </div>
+    <div id="forecast" class="widgets-container">
+        <div id="icons-container">
+            <h2>5-Day Forecast:</h2>
+            <div class="icons">
+                <p id="day-5"class='card-day5'>Day 5</p>
+                 <div class="image">
+                    <img id="image-5"></img>
+                 </div>
+                 <p class="temp" id="temp5"></p>
+                 
+                 <p class="humidity" id="hum5"></p>
+                 <p class="wind-speed" id="speed5"></p>
+            </div>
 
+            <div class="icons">
+                <p id="day-4"class='card-day4'>Day 4</p>
+                <div class="image">
+                    <img id="image-4"></img>
+                </div>
+                <p class="temp" id="temp4"></p>
+                <p class="humidity" id="hum4"></p>
+                <p class="wind-speed" id="speed4"></p>
+            </div> 
+           
+            <div class="icons">
+                <p id="day-3"class='card-day3'>Day 3</p>
+                <div class="image">
+                    <img id="image-3"></img>
+                </div>
+                <p class="temp" id="temp3"></p>
+                <p class="humidity" id="hum3"></p>
+                <p class="wind-speed" id="speed3"></p>
+            </div>
+           
+            <div class="icons">
+                <p id="day-2"class='card-day2'>Day 2</p>
+                <div class="image">
+                    <img id="image-2"></img>
+                </div>
+                <p class="temp" id="temp2"></p>
+                <p class="humidity" id="hum2"></p>
+                <p class="wind-speed" id="speed2"></p>
+            </div>
+
+            <div class="icons">
+                <p id="day-1"class='card-day1'> Day 1</p>
+                <div class="image">
+                    <img id="image-1"></img>
+                </div>
+                <p class="temp" id="temp1"></p>
+                <p class="humidity" id="hum1"></p>
+                <p class="wind-speed" id="speed1"></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+      integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/script.js"></script>
 </body>
 </html>
